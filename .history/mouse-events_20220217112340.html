@@ -12,10 +12,19 @@
             height:100vh;
         }
 
-        .star {
-            height: 1px;
-            width: 1px;
+        .ball {
+            
+            cx:100,
+            cy:100,
+            outerRadius:40,
+            innerRadius:20,
+            numPoints:5,
+            lineWidth:4,
+            stroke:'#622569',
+            fill:'#b8a9c9',
+            rotate:0
             transition: transform 1s;
+        }
         }
 
         p {
@@ -24,20 +33,12 @@
             font: bold 2rem sans-serif;
         }
 
-        svg{
-            fill: purple;
-            height: 50px;
-            width: 50px;
-        }
-
     </style>
 </head>
 
 <body>
     
-    <div id="dot" class="star">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
-    </div>
+    <div id="dot" class="ball"></div>
     <p>Click anywhere</p>
 
     <script>

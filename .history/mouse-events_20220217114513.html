@@ -5,16 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mouse Events</title>
+    <title>Mouse Evebnt</title>
     <style>
         body {
             margin:0;
             height:100vh;
         }
 
-        .star {
-            height: 1px;
-            width: 1px;
+        .ball {
+            align-items: center;
             transition: transform 1s;
         }
 
@@ -24,19 +23,14 @@
             font: bold 2rem sans-serif;
         }
 
-        svg{
-            fill: purple;
-            height: 50px;
-            width: 50px;
-        }
-
     </style>
 </head>
 
 <body>
     
-    <div id="dot" class="star">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+    
+    <div id="dot" class="ball">
+        <img src="/images/star.svg" alt="">
     </div>
     <p>Click anywhere</p>
 
