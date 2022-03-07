@@ -35,12 +35,6 @@
             opacity: 0;
             transition: transform 1s;
         }
-
-        img{
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
         
 
         
@@ -48,11 +42,20 @@
 </head>
 
 <body>
-    <div id="dot" class="ball"></div>
+
     <p>Get the ball in the goal!</p>
+
     
     <img src="/images/goal.png" alt="GOAL!" class="goal">
     
+
+    <div id="dot" class="ball">
+        <img src="/images/soccer.png" alt="Score a Goal!">
+    </div>
+    
+    
+    
+
     <script>
         var dot = document.getElementById('dot');
         document.body.addEventListener('click', (e) => {

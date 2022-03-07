@@ -14,8 +14,7 @@
         }
 
         div {
-            height: 300px;
-            width: 300px;
+            
             transition: transform 1s;
 
         }
@@ -27,20 +26,12 @@
         }
 
         
-        .ball {
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            background: white;
-            opacity: 0;
-            transition: transform 1s;
-        }
-
-        img{
+        .goal{
             display: block;
             margin-left: auto;
             margin-right: auto;
         }
+
         
 
         
@@ -48,11 +39,19 @@
 </head>
 
 <body>
-    <div id="dot" class="ball"></div>
-    <p>Get the ball in the goal!</p>
+
+    <p>Get the ball in the goal! Double Click the ball for a trick!</p>
+
     
     <img src="/images/goal.png" alt="GOAL!" class="goal">
     
+
+        <div class="ball">
+        <img class="dot" src="/images/soccer.png" alt="Score a Goal!">
+        </div>
+    
+    
+
     <script>
         var dot = document.getElementById('dot');
         document.body.addEventListener('click', (e) => {
